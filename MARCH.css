@@ -1,0 +1,80 @@
+div{
+    text-align: center;
+}
+
+#comic{
+    float: left;
+}
+
+#page{
+    width: 810px;
+    height: 955px;
+    border: 5px solid #000;
+    padding: 10px;
+}
+
+#coma05 video{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 400px;
+    height: 230px;
+}
+
+#gedan video{
+    position: absolute;
+    top: 25px;
+    left: 430px;
+    width: 400px;
+    height: 230px;
+}
+
+#coma04 video{
+    position: absolute;
+    top: 265px;
+    left: 430px;
+    width: 400px;
+    height: 230px;
+}
+
+#coma03 video{
+    position: absolute;
+    top: 265px;
+    left: 20px;
+    width: 400px;
+    height: 230px;
+}
+
+#coma02 video{
+    position: absolute;
+    top: 505px;
+    left: 20px;
+    width: 400px;
+    height: 230px;
+}
+
+#coma01 video{
+    position: absolute;
+    top: 505px;
+    left: 430px;
+    width: 400px;
+    height: 230px;
+}
+
+
+
+#jodan video{
+    position: absolute;
+    top: 745px;
+    left: 20px;
+    width: 400px;
+    height: 230px;
+}
+
+#coma00 video{
+    position: absolute;
+    top: 745px;
+    left: 430px;
+    width: 400px;
+    height: 230px;
+}

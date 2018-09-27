@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>move comics</title>
+    <link rel="stylesheet" href="MARCH.css">
+    <script>
+        window.onload = function(){
+            //play crop 1
+            document.getElementById("video01").play();
+	    
+
+            //at the end of crop 1, play crop 2
+            document.getElementById("video01").addEventListener("ended", function(){
+                document.getElementById("video02").play();
+            }, false);
+            
+	    //at the end of crop 2, play crop 3
+            document.getElementById("video02").addEventListener("ended", function(){
+                document.getElementById("video03").play();
+	    }, false);
+
+	   //at the end of crop 3, play crop 4
+	    document.getElementById("video03").addEventListener("ended", function(){
+		document.getElementById("video04").play();
+            }, false);
+
+            //at the end of crop 4, play crop 5 and 6
+            document.getElementById("video04").addEventListener("ended", function(){
+                document.getElementById("video05").play();
+                document.getElementById("video06").play();
+            }, false);
+ 
+	    //at the end of crop 6, play crop 7
+            document.getElementById("video06").addEventListener("ended", function(){
+                document.getElementById("video07").play();
+            }, false);
+
+            //at the end of crop 7, play crop 8
+            document.getElementById("video07").addEventListener("ended", function(){  
+		document.getElementById("video08").play();            
+            }, false);
+
+        }
+    </script>
+</head>
+<body>
+<!--
+	*video formats
+	video format that you can use is different for HTML Browser
+	safari / GoogleChrome				mp4
+	Firefox�@/ Opera				ogv
+	Google Chrome�@/ Opera				webm
+
+	indicate video file name
+	<source src="video file name">
+-->
+<div id="page">
+    <div id="pat07">
+        <!--upper part-->
+        <div id="jodan">
+            <!--frame 1-->
+            <video preload="auto" id="video01">
+                <source src="video/crop1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="coma00">
+            <!--frame 2-->
+            <video preload="auto" id="video02">
+                <source src="video/crop2.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="coma01">
+            <!--frame 2-->
+            <video preload="auto" id="video03">
+                <source src="video/crop3.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="coma02">
+            <!--frame 3-->
+            <video  preload="auto" id="video04">
+                <source src="video/crop4.mp4" type="video/mp4">
+            </video>
+        </div>
+
+	 <div id="coma03">
+            <!--frame 3-->
+            <video preload="auto" id="video05">
+                <source src="video/crop5.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="coma04">
+            <!--frame 4-->
+            <video  preload="auto" id="video06">
+                <source src="video/crop6.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+        <div id="coma05">
+            <!--frame 4-->
+            <video  preload="auto" id="video07">
+                <source src="video/crop7.mp4" type="video/mp4">
+            </video>
+        </div>
+        <br>
+        <!--lower part-->
+        <div id="gedan">
+            <!--frame 5-->
+            <video preload="auto" id="video08">
+                <source src="video/crop8.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
